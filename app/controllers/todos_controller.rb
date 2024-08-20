@@ -43,7 +43,8 @@ class TodosController < ApplicationController
 
 
   def index
-    render plain: "this is index page"
+    @todo = Todo.all
+    
   end
 
 
